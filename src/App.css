@@ -1,0 +1,42 @@
+.App {
+  text-align: center;
+}
+
+#query {
+  width: 300px;
+}
+
+.SearchForm {
+  display: flex;
+  justify-content: center;
+  margin: auto;
+  flex-direction: column;
+}
+
+.SearchForm > *:first-child {
+  margin-top: 20px;
+}
+
+.SearchForm > *:last-child {
+  margin-bottom: 20px;
+}
+
+.SearchForm > * {
+  margin: 10px auto;
+}
+
+.SearchForm > label {
+  margin-bottom: -5px;
+}
+
+.SearchForm > input {
+  text-align: center;
+}
+
+.PageDatum {
+  margin: 30px auto;
+}
+
+.PageDatum > * {
+  margin: 8px auto;
+}
