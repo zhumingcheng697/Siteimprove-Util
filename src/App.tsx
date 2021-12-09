@@ -33,7 +33,7 @@ function App() {
             <form className="SearchForm" onSubmit={ e => {
                 e.preventDefault();
 
-                axios.get(`https://api.siteimprove.com/v2/sites/${ process.env.REACT_APP_SITE_IMPROVE_SITE_ID }/quality_assurance/links/pages_with_broken_links?page=1&page_size=${ e.currentTarget.page_size.value }&query=${ encodeURIComponent(e.currentTarget.query.value) }&search_in=${ e.currentTarget.search_in.value ? "title" : "url" }`, {
+                axios.get(`https://api.siteimprove.com/v2/sites/${ process.env.REACT_APP_SITE_IMPROVE_SITE_ID }/quality_assurance/links/pages_with_broken_links?page=1&page_size=${ e.currentTarget.page_size.value }&query=${ encodeURIComponent(e.currentTarget.query.value) }&search_in=${ e.currentTarget.search_in.value }`, {
                     auth: {
                         username: process.env.REACT_APP_SITE_IMPROVE_USERNAME as string,
                         password: process.env.REACT_APP_SITE_IMPROVE_API_KEY as string
@@ -55,7 +55,7 @@ function App() {
                     }));
                     setPageData(mapped);
                 }).catch((e) => {
-                    alert(`Error: ${e}`);
+                    alert(`Error: ${ e }`);
                     console.error(e);
                 });
             } }>
