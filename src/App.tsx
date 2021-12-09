@@ -30,6 +30,7 @@ function App() {
 
     return (
         <div className="App">
+            <h1>Pages with Broken Links</h1>
             <form className="SearchForm" onSubmit={ e => {
                 e.preventDefault();
 
@@ -59,7 +60,7 @@ function App() {
                     console.error(e);
                 });
             } }>
-                <label htmlFor="query">Title or URL</label>
+                <label htmlFor="query">Page URL or Title</label>
                 <input id="query" name="query" type="text" placeholder="Student Information and Resources"/>
 
                 <label htmlFor="search_in">Search Method</label>
