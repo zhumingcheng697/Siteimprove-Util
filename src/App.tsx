@@ -84,7 +84,7 @@ function App() {
                     <strong>{ e.title }</strong>
                     <p>{ e.url }</p>
                     <p>{ e.broken_links } broken link(s)</p>
-                    <a href={ e.report_url }>View Report</a>
+                    <a rel="noreferrer" target="_blank" href={ e.report_url }>View Report</a>
                 </div>;
             }) }
         </div>
